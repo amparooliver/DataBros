@@ -1,0 +1,1257 @@
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,ENCUESTA PERMANENTE DE HOGARES CONTINUA ANUAL 2023,,,,,,,
+,,,,,,,,,,
+,,,DICCIONARIO DE VARIABLES,,,,,,,
+,,,,,,,,,,
+,,,ARCHIVO,CONTENIDO,,,,,,
+,,,REG01_EPHC_ANUAL_2023,SECCIÓN 2. CARACTERÍSTICA DE LA VIVIENDA E INVENTARIO DE BIENES DURADEROS,,,,,,
+,,,REG02_EPHC_ ANUAL_2023,SECCIÓN 1. CARACTERÍSTICAS DE LA POBLACIÓN,,,,,,
+,,,,SECCIÓN 4. EDUCACIÓN,,,,,,
+,,,,SECCIÓN 5. SALUD DE TODOS LOS MIEMBROS,,,,,,
+,,,,SECCIÓN 6. EMPLEO E INGRESO LABORAL,,,,,,
+,,,,SECCIÓN 6. PARTE A - RESUMEN DE LAS ACTIVIDADES ECONÓMICAS DE LOS MIEMBROS DEL HOGAR,,,,,,
+,,,,SECCIÓN 6. PARTE B - TRABAJO PRINCIPAL DURANTE LOS ÚLTIMOS 7 DÍAS,,,,,,
+,,,,SECCIÓN 6. PARTE C1 - TRABAJO SECUNDARIO DURANTE  LOS ÚLTIMOS 7 DÍAS,,,,,,
+,,,,SECCIÓN 6. PARTE C2 - TRABAJO TERCIARIO DURANTE  LOS ÚLTIMOS 7 DÍAS,,,,,,
+,,,,SECCIÓN 6. PARTE D - SATISFACCION EN EL EMPLEO,,,,,,
+,,,,SECCIÓN 6. PARTE E - INGRESOS DEL TRABAJO PRINCIPAL Y OTRAS FUENTES,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,VARIABLES COMUNES A TODAS LAS BASES,,,,,,,,,
+,,,,,,,,,,
+,Página,Sección,Pregunta,,Variable,Tipo,Longitud,Decimales,Categoría,Rango
+,1,,UPM,,UPM,N,5,,,1:1750
+,1,,N° de Vivienda,,NVIVI,N,3,,,
+,1,,N° de Hogar,,NHOGA,N,1,,,1:3
+,1,,Trimestre,,TRIMESTRE,N,2,,,1:4
+,1,,Departamento de residencia,,DPTO,N,2,,,0:15
+,1,,Área de residencia,,AREA,N,1,,Urbana,1
+,,,,,,,,,Rural,6
+,,,Año,,AÑO,N,4,,,2023
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,REG01_EPHC_ANUAL_2023,,VIVIENDA,,,,,,,
+,Página,Sección,Pregunta,,Variable,Tipo,Longitud,Decimales,Categoría,Rango
+,1,,Hombres,,HOMBRES,N,2,0,Cantidad de hombres,
+,1,,Mujeres,,MUJERES,N,2,0,Cantidad de mujeres,
+,1,,Total de miembros,,TOTAL,N,2,0,Total de miembros,
+,4,2,1,Tipo de vivienda,V01,N,1,0,"Casa, rancho",1
+,,,,,,,,,Departamento o piso,2
+,,,,,,,,,Pieza de inquilinato,3
+,,,,,,,,,Vivienda improvisada,4
+,,,,,,,,,Otro (especificar),5
+,,,,,,,,,NR,9
+ ,4,2,2.a,N° de piezas,V02A,N,2,0,Nº de piezas,
+,4,2,2.b,N° de dormitorios,V02B,N,2,0,Nº de dormitorios,
+,4,2,3,Tipo de pared,V03,N,2,0,Estaqueo,1
+,,,,,,,,,Adobe,2
+,,,,,,,,,Madera,3
+,,,,,,,,,Ladrillo,4
+,,,,,,,,,Bloque de cemento,5
+,,,,,,,,,Tronco de palma,6
+,,,,,,,,,"Cartón, hule, madera de embalaje",7
+,,,,,,,,,No tiene pared,8
+,,,,,,,,,Otro (especificar),9
+,,,,,,,,,NR,99
+,4,2,4,Tipo de piso,V04,N,2,0,Tierra,1
+,,,,,,,,,Madera,2
+,,,,,,,,,Ladrillo,3
+,,,,,,,,,Lecherada,4
+,,,,,,,,,"Baldosa común, mosaico, cerámica",5
+,,,,,,,,,"Porcelanato, mármol, granito",6
+,,,,,,,,,Parquet,7
+,,,,,,,,,"Alfombra, vinílico",8
+,,,,,,,,,Otro (especificar),9
+,,,,,,,,,NR,99
+,4,2,5,Tipo de techo,V05,N,2,0,Teja,1
+,,,,,,,,,Paja,2
+,,,,,,,,,Fibrocemento (eternit),3
+,,,,,,,,,Chapa de zinc,4
+,,,,,,,,,Tablilla de madera,5
+,,,,,,,,,"Hormigón armado, loza o bovedilla",6
+,,,,,,,,,Tronco de palma,7
+,,,,,,,,,"Cartón, hule, madera de embalaje",8
+,,,,,,,,,Otro (especificar),9
+,,,,,,,,,NR,99
+,4,2,6,Agua utilizada en la vivienda,V06,N,2,0,ESSAP (ex CORPOSANA),1
+,,,,El agua que más utiliza el hogar proviene de…,,,,,Junta de Saneamiento (SENASA),2
+,,,,,,,,,Red comunitaria,3
+,,,,,,,,,Red o prestador privado,4
+,,,,,,,,,Pozo artesiano,5
+,,,,,,,,,Pozo con bomba,6
+,,,,,,,,,Pozo sin bomba,7
+,,,,,,,,,Manantial o naciente,8
+,,,,,,,,,"Tajamar, río, arroyo",9
+,,,,,,,,,Agua de lluvia,10
+,,,,,,,,,Aguatero,11
+,,,,,,,,,Otra fuente,12
+,,,,,,,,,NR,99
+,4,2,7,Normalmente ¿le provee agua al hogar las 24 horas ?,V07,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,4,2,7A,El agua que utiliza en su vivienda llega a través de …. ,V07A,N,1,0,Cañería dentro del terreno pero fuera de la vivienda,1
+,,,,,,,,,Cañería dentro de la vivienda,2
+,,,,,,,,,Canilla pública,3
+,,,,,,,,,Pozo dentro del terreno,4
+,,,,,,,,,Vecino,5
+,,,,,,,,,Aguatero,6
+,,,,,,,,,Otros medios (especificar),7
+,,,,,,,,,NR,9
+,4,2,8,Agua para beber en el hogar,V08,N,2,0,ESSAP (ex CORPOSANA),1
+,,,,El agua que más beben en el hogar proviene de…,,,,,Junta de Saneamiento (SENASA),2
+,,,,,,,,,Red comunitaria,3
+,,,,,,,,,Red o prestador privado,4
+,,,,,,,,,Pozo artesiano,5
+,,,,,,,,,Pozo excavado protegido (brocal y tapa),6
+,,,,,,,,,Pozo excavado sin protección (sin brocal y/o sin tapa),7
+,,,,,,,,,Manantial protegido,8
+,,,,,,,,,Manantial sin protección,9
+,,,,,,,,,Agua de lluvia,10
+,,,,,,,,,Agua embotellada (mineral),11
+,,,,,,,,,Aguatero,12
+,,,,,,,,,"Agua superficial (río, represa, lago, estanque, arroyo, canal, canales de riego)",13
+,,,,,,,,,Otro (especificar),14
+,,,,,,,,,NR,99
+,4,2,9,El agua que beben llega a su vivienda a través de….,V09,N,1,0,Cañería dentro del terreno pero fuera de la vivienda,1
+,,,,,,,,,Cañería dentro de la vivienda,2
+,,,,,,,,,Canilla pública,3
+,,,,,,,,,Pozo dentro del terreno,4
+,,,,,,,,,Vecino,5
+,,,,,,,,,Aguatero,6
+,,,,,,,,,Agua embotellada (mineral),7
+,,,,,,,,,Otros medios (especificar),8
+,,,,,,,,,NR,9
+,4,2,10,¿Dispone de luz eléctrica?,V10,N,1,0,Si,1
+,,,,,,,,,No,6
+,4,2,11.a,¿Tiene línea telefónica fija?,V11A,N,1,0,Si ,1
+,,,,,,,,,No,6
+,,,11.b,¿Algún miembro del hogar tiene celular?,V11B,N,1,0,Si ,1
+,,,,,,,,,No,6
+,4,2,12,¿Tiene baño?,V12,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,4,2,13,El baño se desagüa en…,V13,N,1,0,Red de alcantarillado sanitario (cloaca),1
+,,,,,,,,,Cámara séptica y pozo ciego,2
+,,,,,,,,,"Pozo ciego, sin cámara séptica",3
+,,,,,,,,,"En la superficie de la tierra, hoyo abierto, zanja, arroyo, río",4
+,,,,,,,,,Letrina ventilada de hoyo seco (común con tubo de ventilación),5
+,,,,,,,,,"Letrina común de hoyo seco (con losa, techo, paredes y puertas)",6
+,,,,,,,,,Letrina común sin techo o puerta,7
+,,,,,,,,,Otro (especificar),8
+,,,,,,,,,No informado,9
+,,,,,,,,,NA,Blanco
+,5,2,14.a,¿Tiene pieza para cocinar?,V14A,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,14.b,Para cocinar usa principalmente…,V14B,N,1,0,Leña,1
+,,,,,,,,,Gas,2
+,,,,,,,,,Carbón,3
+,,,,,,,,,Electricidad,4
+,,,,,,,,,"Kerosene, alcohol",5
+,,,,,,,,,Otro (especificar),6
+,,,,,,,,,"Ninguno, no cocina",7
+,,,,,,,,,NR,9
+,5,2,15,¿Cómo elimina habitualmente la basura?,V15,N,2,0,Quema,1
+,,,,,,,,,Recolección pública,2
+,,,,,,,,,Recolección privada,3
+,,,,,,,,,Tira en el hoyo,4
+,,,,,,,,,"Tira en el patio, baldío, zanja o calle",5
+,,,,,,,,,Tita en el vertedero municipal,6
+,,,,,,,,,Tira en la chacra,7
+,,,,,,,,,"Tira en arroyo, río o laguna",8
+,,,,,,,,,Otro (especificar),9
+,,,,,,,,,NR,99
+,5,2,16,Esta vivienda…,V16,N,1,0,Es propia,1
+,,,,,,,,,La están pagando en cuotas,2
+,,,,,,,,,Es en condominio,3
+,,,,,,,,,Es alquilada,4
+,,,,,,,,,Es ocupada de hecho,5
+,,,,,,,,,Es cedida,6
+,,,,,,,,,Otra situación (especificar),7
+,,,,,,,,,NR,9
+,5,2,17,El lote o terreno donde está construída la vivienda…,V17,N,1,0,Es propio,1
+,,,,,,,,,Lo están pagando en cuotas,2
+,,,,,,,,,Es en condominio,3
+,,,,,,,,,Es fiscal o municipal,4
+,,,,,,,,,Es alquilado,5
+,,,,,,,,,Es ocupado de hecho,6
+,,,,,,,,,Es cedido,7
+,,,,,,,,,Otra situación (especificar),8
+,,,,,,,,,NR,9
+,5,2,18,El mes pasado. ¿Cuánto pagó el hogar por el alquiler?,V18,N,11,0,Gs. pagó por alquiler,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,5,2,19,"Si tuviera que alquilar esta vivienda, ¿cuánto estima que le pagarían por mes?",V19,N,11,0,Gs. estima pagarían,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,5,2,20,"Si usted vendiera esta vivienda, ¿a qué precio podría venderla?",V20,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,5,2,21,"En los últimos 12 meses. ¿Algún miembro del hogar pagó por impuesto inmobiliario, tasas municipales, tasa de cementerio, etc.?",V21,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,¿Cuánto?,V21G,N,11,0,Gs. pagó,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,5,2,23,El hogar cuenta con…,,,,,,
+,,,23.a,Computador/Notebook,V23A1,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,23.a,Tableta o dispositivo similar,V23A2,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,23.b,Tiene este hogar internet ?,V23B,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,23.c,El tipo de conexión es…,,,,,,
+,,,23.c1.cable o wifi,Internet por cable o por wifi,V23C1,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,23.c2.modem USB,Internet por modem USB,V23C2,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,5,2,24,Este hogar tiene ...,,,,,,
+,,,24.01.radio,Radio,V2401,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.02.televisor,Televisor,V2402,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.03.heladera,Heladera,V2403,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.04.cocina,Cocina a gas,V2404,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.04A.cocina,Cocina eléctrica,V2404A,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.05.lavarropas,Máquina lavarropas,V2405,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.06.video,Video/DVD,V2406,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.07.termocalefón,Termocalefón,V2407,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.08.acondicinoador,Acondicionador de aire,V2408,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.09.antena,Antena parabólica,V2409,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.10.TV cable,TV cable,V2410,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.11.mircoondas,Horno microondas,V2411,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.12.horno eléctrico,Horno eléctrico,V2412,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.13.autos,"Automóvil, camión o camioneta ",V2413,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,24.14.motocicleta,Motocicleta,V2414,N,1,0,Si tiene,1
+,,,,,,,,,No tiene,6
+,,,,,,,,,NR,9
+,,,,Tipo de Hogar,THOGAV,N,1,0,Unipersonal,1
+,,,,,,,,,Nuclear Completo,2
+,,,,,,,,,Nuclear Incompleto,3
+,,,,,,,,,Extendido,4
+,,,,,,,,,Compuesto,5
+,,,,Este hogar recibió bono/s para almuerzo escolar,E01N,N,1,0,SI,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,Cantidad de bonos recibió,E01NC,N,4,0,NR,9999
+,,,,Estatus de pobreza,POBREZAI,N,8,0,Pobre extremo,1
+,,,,,,,,,Pobre no extremo,2
+,,,,,,,,,No pobre,3
+,,,,Condición de pobreza,POBNOPOI,N,8,0,No pobre,0
+,,,,,,,,,Pobre,1
+,,,,Factor de diseño muestral,FEX.2022,N,5,0,,
+,,,,,,,,,,
+,REG02_EPHC_ANUAL_2023,,POBLACIÓN,,,,,,,
+,Página,Sección,Pregunta,,Variable,Tipo,Longitud,Decimales,Categoría,Rango
+,,,N° de línea de la persona,,L02,N,2,0,Nº de persona,
+,,1,2,Edad del miembro del hogar,P02,N,3,0,Edad,
+,2,1,3,Relación de parentesco,P03,N,2,0,Jefe/a,1
+,,,,,,,,,"Esposo/a, compañero/a",2
+,,,,,,,,,Hijo/a,3
+,,,,,,,,,Hijastro/a,4
+,,,,,,,,,Nieto/a,5
+,,,,,,,,,Yerno/Nuera,6
+,,,,,,,,,Padre/Madre,7
+,,,,,,,,,Suegro/a,8
+,,,,,,,,,Otro pariente,9
+,,,,,,,,,No pariente,10
+,,,,,,,,,Trabajador/a doméstico/a,11
+,,,,,,,,,Familiar del/de la trabajador/a doméstico/a,12
+,2,1,4,¿Es miembro del hogar?,P04,N,1,0,Si,1
+,,,,,,,,,No,6
+,2,1,4.a,¿Tiene cédula de identidad vigente?,P04A,N,1,0,Paraguaya,1
+,,,,,,,,,Extranjera,2
+,,,,,,,,,Ambas,3
+,,,,,,,,,No tiene,6
+,2,1,4.b,¿Se anotó su nacimiento en el Registro Civil?,P04B,N,1,0,Si,1
+,,,,,,,,,No,2
+,,,,,,,,,No sabe,3
+,,,,,,,,,NA,Blanco
+,2,1,5.cónyuge,N° de línea del cónyuge,P05C,N,2,0,N° de línea,
+,,,,,,,,,NR,99
+,,,5.padre,N° de línea del padre,P05P,N,2,0,N° de línea,
+,,,,,,,,,NR,99
+,,,5.madre,N° de línea de la madre,P05M,N,2,0,N° de línea,
+,,,,,,,,,NR,99
+,2,1,6,Sexo,P06,N,1,0,Hombres,1
+,,,,,,,,,Mujeres,6
+,2,1,8.día,Día de nacimiento,P08D,N,2,0,Día nacimiento,01:31
+,,,,,,,,,NR,99
+,,,8.mes,Mes de nacimiento,P08M,N,2,0,Mes nacimiento,01:12
+,,,,,,,,,NR,99
+,,,8.año,Año de nacimiento,P08A,N,4,0,Año nacimiento,
+,,,,,,,,,NR,9999
+,2,1,9,Estado Civil,P09,N,1,0,Casado,1
+,,,,,,,,,Unido,2
+,,,,,,,,,Separado,3
+,,,,,,,,,Viudo,4
+,,,,,,,,,Soltero,5
+,,,,,,,,,Divorciado,6
+,,,,,,,,,NR,9
+,14,6.A,1,¿La persona responde por si misma?,A01,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,14,6.A,1.A,N° de línea de la persona que responde,A01A,N,2,0,Informante miembro,
+,,,,,,,,,Informante no miembro,30
+,,,,,,,,,NR,99
+,14,6.A,2,"Durante los últimos 7 días. ¿Ha realizado algún trabajo ya sea como empleado, cuenta propia, empleador (patrón) o como familiar no remunerado?",A02,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,14,6.A,3,"Durante los últimos 7 días. ¿Trabajó al menos 1 hora, por cuenta propia, como patrón o empleado en una empresa o negocio no agropecuaria o al menos 7 horas en la chacra o en el cuidado de sus animales?",A03,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,14,6.A,4,"¿Tiene algún trabajo o una ocupación como obrero, empleado, cuenta propia o empleador (patrón) aunque no lo haya realizado en los últimos 7 días, pudiendo reincorporarse al empleo?",A04,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,14,6.A,4A,¿Cuántos trabajos/empleos tenía en los últimos 7 días?,A04A,N,1,0,N° de trabajos/empleos,
+,,,,,,,,,NR,9
+,14,6.A,4B,¿Cuánto tiempo cree que duraría su ausencia  en su lugar de trabajo? ,A04B,N,1,0,Meses,00:12
+,,,,,,,,,NR,99
+,15,6.A,5,"Si se le hubiera ofrecido trabajo en los últimos 7 días, ¿habría podido empezar a trabajar?",A05,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,15,6.A,7,¿Hizo algo para conseguir trabajo en los últimos 7 días?,A07,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,15,6.A,8,¿Hizo algo para conseguir trabajo en los últimos 30 días? ,A08,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,15,6.A,10,¿Qué hizo para conseguir trabajo los últimos 7 días?,A10,N,2,0,Consultó a algún empleador o patrón,1
+,,,,,,,,,Consultó en alguna agencia privada de empleo,2
+,,,,,,,,,Consultó en alguna oficina de empleo del MT,3
+,,,,,,,,,Consultó con amigos o parientes,4
+,,,,,,,,,Publicó o contestó un anuncio en algún lugar  público o en medios de comunicación ,5
+,,,,,,,,,Se presentó a concurso público,6
+,,,,,,,,,Gestión para trabajar por su cuenta,7
+,,,,,,,,,Publicó o contestó un anuncio en Internet,8
+,,,,,,,,,Otra gestión (especificar) ,9
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,16,6.A,11.años,Años que está buscando trabajo,A11A,N,1,0,Años,0:8
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,11.meses,Meses que está buscando trabajo,A11M,N,2,0,Meses,00:11
+,,,,,,,,,NR,99
+,,,,,,,,,NA,
+,,,11.semanas,Semanas que está buscando trabajo,A11S,N,1,0,Semanas,0:3
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,16,6.A,12,¿Ha trabajado anteriormente?,A12,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,16,6.A,13.código y descripción,Código y descripción de la ocupación que desempeñaba en su último trabajo,A13REC,N,2,0,"Miembros del Poder Ejecutivo, Legislativo y Judicial, personal directivo de la Administración pública y de empresa",1
+,,,,,,,,,Profesionales científicos e intelectuales,2
+,,,,,,,,,Técnicos y profesionales de nivel medio,3
+,,,,,,,,,Empleados de oficina,4
+,,,,,,,,,Trabajadores de los servicios y vendedores de comercios y mercados,5
+,,,,,,,,,Agricultores y trabajadores Agropecuarios y Pesqueros,6
+,,,,,,,,,"Oficiales, operarios y artesanos de artes mecánicas y de otros oficios",7
+,,,,,,,,,Operadores de instalaciones y máquinas y montadores,8
+,,,,,,,,,Trabajadores no calificados,9
+,,,,,,,,,Fuerzas armadas,10
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,16,6.A,14.código y descripción,Código y descripción de la rama de actividad del establecimiento donde trabajaba,A14REC,N,2,0,"Agricultura, ganadería, caza, silvicultura y pesca",1
+,,,,,,,,,Industrias manufactureras,2
+,,,,,,,,,"Electricidad, gas y agua",3
+,,,,,,,,,Construcciones,4
+,,,,,,,,,"Comercio al por mayor y menor, restaurantes y hoteles",5
+,,,,,,,,,"Transporte, almacenamiento y comunicaciones",6
+,,,,,,,,,"Establecimientos financieros, seguros, bienes inmuebles y servicios prestados a las empresas",7
+,,,,,,,,,"Servicios comunales, sociales y personales",8
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,16,6.A,15,En este trabajo era…,A15,N,1,0,Empleado / obrero público,1
+,,,,,,,,,Empleado / obrero privado,2
+,,,,,,,,,Empleador o patrón,3
+,,,,,,,,,Trabajador por cuenta propia,4
+,,,,,,,,,Trabajador familiar no remunerado,5
+,,,,,,,,,Empleado doméstico,6
+,,,,,,,,,Empleado/obrero/empleado domèstico en el extranjero,7
+,,,,,,,,,Empleador/patròn/cuenta propia en el extranjero,8
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,17,6.A,16,¿Cuántas personas aproximadamente trabajan en el establecimiento donde trabajaba?,A16,N,2,0,Solo,1
+,,,,,,,,,2 a 5 personas,2
+,,,,,,,,,6 a 10 personas,3
+,,,,,,,,,11 a 20 personas,4
+,,,,,,,,,21 a 30 personas,5
+,,,,,,,,,31 a 50 personas,6
+,,,,,,,,,51 a 100  personas,7
+,,,,,,,,,101 a 500 personas ,8
+,,,,,,,,,Más de 500 personas,9
+,,,,,,,,,Empleado doméstico,10
+,,,,,,,,,No sabe,11
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,17,6.A,17.años,Años que está sin trabajo,A17A,N,2,0,Años,0:8
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,17.meses,Meses que está sin trabajo,A17M,N,2,0,Meses,00:11
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,17.semanas,Semanas que está sin trabajo,A17S,N,1,0,Semanas,0:3
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,17,6.A,18,¿Cuál es la razón principal por la que dejó su última ocupación?,A18,N,2,0,Ganaba poco,1
+,,,,,,,,,No tenía ingreso,2
+,,,,,,,,,Fue despedido,3
+,,,,,,,,,Cerró el establecimiento,4
+,,,,,,,,,Terminó su contrato,5
+,,,,,,,,,Período de prueba,6
+,,,,,,,,,Es estudiante,7
+,,,,,,,,,Se jubiló,8
+,,,,,,,,,Ambiente inadecuado,9
+,,,,,,,,,Poco estable,10
+,,,,,,,,,Trabajo temporal,11
+,,,,,,,,,Labores del hogar,12
+,,,,,,,,,Falta de pedido,13
+,,,,,,,,,Motivo familiar,14
+,,,,,,,,,Es anciano,15
+,,,,,,,,,Es discapacitado,16
+,,,,,,,,,Enfermedad/accidente,17
+,,,,,,,,,Otra (especificar),18
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,18,6.B,1.código,Código ocupación principal en los últimos 7 días,B01REC,N,2,0,(igual a A13REC),
+,18,6.B,2.código,Código rama de actividad ocupación principal,B02REC,N,2,0,(igual a A14REC),
+,18,6.B,3.lunes,"Horas trabajó efectivamente el día lunes (horas, minutos)",B03LU,N,6,2,,"00,00:24,00"
+,,,,,,,,,NR,99.99
+,,,,,,,,,NA,Blanco
+,,,3.martes,Horas trabajó efectivamente el día martes,B03MA,N,6,2,,"00,00:24,00"
+,,,,,,,,,NR,99.99
+,,,,,,,,,NA,Blanco
+,,,3.miércoles,Horas trabajó efectivamente el día miércoles,B03MI,N,6,2,,"00,00:24,00"
+,,,,,,,,,NR,99.99
+,,,,,,,,,NA,Blanco
+,,,3.jueves,Horas trabajó efectivamente el día jueves,B03JU,N,6,2,,"00,00:24,00"
+,,,,,,,,,NR,99.99
+,,,,,,,,,NA,Blanco
+,,,3.viernes,Horas trabajó efectivamente el día viernes,B03VI,N,6,2,,"00,00:24,00"
+,,,,,,,,,NR,99.99
+,,,,,,,,,NA,Blanco
+,,,3.sábado,Horas trabajó efectivamente el día sábado,B03SA,N,6,2,,"00,00:24,00"
+,,,,,,,,,NR,99.99
+,,,,,,,,,NA,Blanco
+,,,3.domingo,Horas trabajó efectivamente el día domingo,B03DO,N,6,2,,"00,00:24,00"
+,,,,,,,,,NR,99.99
+,,,,,,,,,NA,Blanco
+,18,6.B,4,"La cantidad de horas que trabajó en los últimos 7 días, es habitual",B04,N,1,0,Número habitual de horas,1
+,,,,,,,,,Más horas que lo habitual,2
+,,,,,,,,,Menos horas que lo habitual,3
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,18,6.B,5,Razón principal por la que no trabajó el número habitual de horas los últimos 7 días,B05,N,2,0,Disminución de  trabajo,1
+,,,,,,,,,Falta de materiales,2
+,,,,,,,,,"Reparaciones en la planta, máquina, vehículo",3
+,,,,,,,,,Empleo nuevo que empezó dentro de la semana,4
+,,,,,,,,,Empleo que terminó dentro de la semana,5
+,,,,,,,,,Inclemencia del tiempo,6
+,,,,,,,,,"Gestiones particulares, viajes (independientes)",7
+,,,,,,,,,"Vacaciones, permiso, huelga (asalariados)",8
+,,,,,,,,,Enfermedad,9
+,,,,,,,,,"Demasiado ocupado en tareas del hogar, estudio, etc.",10
+,,,,,,,,,Trabaja a tiempo completo sólo en período de mayor actividad,11
+,,,,,,,,,"Día feriado, fiesta",12
+,,,,,,,,,Cualquier otra razón (especificar),13
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,19,6.B,6,Horas que trabaja habitualmente en la semana en esta ocupación,B06,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,Blanco
+,19,6.B,7.años,Años de su vida que ha trabajado en ésta ocupación,B07A,N,2,0,Años,
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,7.meses,Meses de su vida que ha trabajado en ésta ocupación,B07M,N,2,0,Meses,00:11
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,7.semanas,Semanas de su vida que ha trabajado en ésta ocupación,B07S,N,1,0,Semanas,0:3
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,19,6.B,8,¿Cuántas personas aproximadamente trabajan en el establecimiento donde trabaja?,B08,N,2,0,(igual a A16),
+,19,6.B,9.años,Años que trabaja en esta empresa,B09A,N,2,0,Años,
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,9.meses,Meses que trabaja en esta empresa,B09M,N,2,0,Meses,00:11
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,9.semanas,Semanas que trabaja en esta empresa,B09S,N,1,0,Semanas,0:3
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,19,6.B,10,¿Aporta a una caja de jubilación por esta ocupación?,B10,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,19,6.B,11,¿A cuál caja aporta?,B11,N,1,0,IPS,1
+,,,,,,,,,Caja Fiscal,2
+,,,,,,,,,Caja Bancaria,3
+,,,,,,,,,Caja Municipal,4
+,,,,,,,,,Caja Privada,5
+,,,,,,,,,Otra (especificar),6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,20,6.B,12,En este trabajo es…,B12,N,1,0,(igual a A15),
+,20,6.B,12A,¿Por este trabajo  tiene seguro privado?,B12A,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,20,6.B,12B,¿El costo del seguro de …,B12B,N,1,0,"Se le acredita un monto
+y lo paga",1
+,,,,,,,,,Paga directamente la Institución,2
+,,,,,,,,,Paga parcialmente y la otra parte paga la institución,3
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,20,6.B,12,¿Que porcentaje paga?,B12C,N,3,0,Porcentaje,0:20
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,20A,6.B,13,¿Dispone de vacaciones anuales pagadas?,B13,N,2,0,"Sí, N° de días al año",
+,,,,,,,,,No,88
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,20A,6.B,14,¿Dispone semanalmente de día/s de descanso?,B14,N,2,0,"Si, N° de horas",
+,,,,,,,,,No,88
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,20A,6.B,15,¿Forma parte de algún sindicato o asociación de empleados en este trabajo?,B15,N,1,0,"Sí, de un sindicato",1
+,,,,,,,,,"Sí, de una asociación",2
+,,,,,,,,,"Sí, de ambas",3
+,,,,,,,,,No,4
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,20A,6.B,16. guaraníes,Pago neto o líquido que recibió,B16G,N,11,0,Gs. gana ,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,16.unidad de tiempo,Unidad de tiempo,B16U,N,1,0,Día,2
+,,,,,,,,,Semana,3
+,,,,,,,,,Quincena,4
+,,,,,,,,,Mes,5
+,,,,,,,,,Año,6
+,,,,,,,,,NR,9
+,,,16.número de días,N° de días,B16D,N,2,0,N° de días,01:30
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,16.total mensual,Total mensual,B16T,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,21,6.B,17,¿Recibió sueldos o salarios adicionales en esta ocupación en el último pago?,B17,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,21,6.B,18.guaraníes,"¿Cuántos guaraníes monto adicional: horas extras,comisión,etc. recibió?",B18AG,N,11,0,Gs. adicional,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,18.unidad de tiempo,Unidad de tiempo,B18AU,N,1,0,Mes,5
+,,,,,,,,,Año,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,18.guaraníes,¿Cuántos guaraníes monto adicional: Aguinaldo recibió?,B18BG,N,11,0,Gs. adicional,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,18.unidad de tiempo,Unidad de tiempo,B18BU,N,1,0,Año,6
+,,,,,,,,,Semestre,7
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,21,6.B,19,¿Recibió comidas y/o bebidas gratis del patrón o empleador en el último mes?,B19,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,21,6.B,20.guaraníes,¿Cuánto estima el valor en Guaraníes?,B20G,N,11,0,Gs. estima,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,20.unidad de tiempo,Unidad de tiempo,B20U,N,1,0,Día,2
+,,,,,,,,,Semana,3
+,,,,,,,,,Quincena,4
+,,,,,,,,,Mes,5
+,,,,,,,,,Año,6
+,,,,,,,,,NR,9
+,,,20.número de días,N° de días,B20D,N,2,0,N° de días,01:30
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,20.total mensual,Total mensual,B20T,N,11,0,Total mensual,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,22,6.B,21,"¿Ocupa o alquila una casa, pieza o departamento de la empresa?",B21,N,1,0,"Si, ocupa",1
+,,,,,,,,,"Si, alquila",2
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,22,6.B,22,¿Cuánto paga por mes por el alquiler?,B22,N,11,0,Gs.  paga por alquiler,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,22,6.B,23,¿Cuánto tendría que pagar por si alquilara de otro?,B23,N,11,0,Gs.  pagaría por alquiler,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,22,6.B,24,¿Recibe en el año uniforme o ropa gratis del patrón o empleador?,B24,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,22,6.B,25,¿En cuánto estima su valor por año?,B25,N,11,0,Gs. estima uniforme o ropa,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,22,6.B,26,¿Bajo qué tipo de contrato trabaja en esta ocupación?,B26,N,1,0,Contrato indefinido/nombrado,1
+,,,,,,,,,Contrato definido temporal con emisión de factura legal,2
+,,,,,,,,,Contrato definido temporal sin emisión de factura legal,3
+,,,,,,,,,Contrato verbal,4
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,23,6.B,27,Quién/es conduce/n o maneja/n el establecimiento o negocio,,,,,,
+,,,27.1,Persona N°,B271,N,2,0,N° de línea de la 1era. Persona,
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,27.2,Persona N°,B272,N,2,0,N° de línea de la 2da. Persona,
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,23,6.B,28,¿Tiene RUC el establecimiento o negocio en donde trabaja?,B28,N,1,0,Si,1
+,,,,,,,,,No sabe,2
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,23,6.B,29,¿Cuál es la condición jurídica del establecimiento o negocio dónde trabaja?,B29,N,1,0,Unipersonal,1
+,,,,,,,,,S.A.,2
+,,,,,,,,,S.R.L.,3
+,,,,,,,,,Cooperativa,4
+,,,,,,,,,No sabe,5
+,,,,,,,,,Otra (especificar),6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,23,6.B,30,"¿El establecimiento o negocio donde trabaja, emite factura legal a sus clientes ?",B30,N,1,0,Si,1
+,,,,,,,,,No sabe,2
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,23,6.B,31,"Además de este trabajo, ¿tiene o tenía otro trabajo durante los últimos 7 días?",B31,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,24,6.C,1.código,Código ocupación secundaria en los últimos 7 días,C01REC,N,2,0,(igual a A13REC),
+,24,6.C,2.código,Código rama de actividad ocupación secundaria,C02REC,N,2,0,(igual a A14REC),
+,24,6.C,3,¿Cuántas horas trabajó efectivamente en esta ocupación durante los últimos 7 días?,C03,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,
+,24,6.C,4,¿La cantidad de horas que trabajó es habitual?,C04,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,24,6.C,5,¿Cuántas horas trabaja habitualmente en una semana en esta ocupación?,C05,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,Blanco
+,24,6.C,6,¿Cuántas personas aproximadamente trabajan en el establecimiento donde trabaja?,C06,N,2,0,(igual a A16),
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,25,6.C,7,¿Aporta a una caja de jubilación por este trabajo?,C07,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,25,6.C,8,¿A cuál caja aporta?,C08,N,1,0,IPS,1
+,,,,,,,,,Caja Fiscal,2
+,,,,,,,,,Caja Bancaria,3
+,,,,,,,,,Caja Municipal,4
+,,,,,,,,,Caja Privada,5
+,,,,,,,,,Otra (especificar),6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,25,6.C,9,En este trabajo es…,C09,N,1,0,(igual a A15),
+,25,6.C,10,Quién/es conduce/n o maneja/n el establecimiento o negocio,,,,,,
+,,,10.1,Persona N°,C101,N,2,0,N° de línea de la 1era. Persona,
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,10.2,Persona N°,C102,N,2,0,N° de línea de la 2da. Persona,
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,25,6.C,11.guaraníes,¿Cuál fue el monto del último pago en esta otra ocupación en efectivo y en especie?,C11G,N,11,0,Gs. último pago,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,11.unidad de tiempo,Unidad de tiempo,C11U,N,1,0,Hora,1
+,,,,,,,,,Día,2
+,,,,,,,,,Semana,3
+,,,,,,,,,Quincena,4
+,,,,,,,,,Mes,5
+,,,,,,,,,Año,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,11. número de días,N° de días,C11D,N,2,0,N° de días,01:30
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,11.total mensual,Total mensual,C11T,N,11,0,Total mensual,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,26,6.C,12,¿Recibió sueldos o salarios adicionales en este trabajo en el último pago?,C12,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,26,6.C,13.guaraníes,"¿Cuántos guaraníes monto adicional: horas extras,comisión,etc. recibió?",C13AG,N,11,0,Gs. adicional,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,13.unidad de tiempo,Unidad de tiempo,C13AU,N,1,0,Mes,5
+,,,,,,,,,Año,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,13.guaraníes,¿Cuántos guaraníes Monto adicional: Aguinaldo recibió?,C13BG,N,11,0,Gs. adicional,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,13.unidad de tiempo,Unidad de tiempo,C13BU,N,1,0,Año,6
+,,,,,,,,,Semestre,7
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,26,6.C,14,¿Bajo qué tipo de contrato trabaja en esta ocupación?,C14,N,1,0,Contrato indefinido/nombrado,1
+,,,,,,,,,Contrato definido temporal con emisión de factura legal,2
+,,,,,,,,,Contrato definido temporal sin emisión de factura legal,3
+,,,,,,,,,Contrato verbal,4
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,26A,6.B,14a,¿Tiene RUC el establecimiento o negocio en donde trabaja?,C14A,N,1,0,Si,1
+,,,,,,,,,No sabe,2
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,26A,6.B,14b,¿Cuál es la condición jurídica del establecimiento o negocio dónde trabaja?,C14B,N,1,0,Unipersonal,1
+,,,,,,,,,S.A.,2
+,,,,,,,,,S.R.L.,3
+,,,,,,,,,Cooperativa,4
+,,,,,,,,,No sabe,5
+,,,,,,,,,Otra (especificar),6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,26A,6.B,14c,"¿El establecimiento o negocio donde trabaja, emite factura legal a sus clientes?",C14C,N,1,0,Si,1
+,,,,,,,,,No sabe,2
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,26A,6.C,15,N° de otras ocupaciones que tuvo en los últimos 7 días,C15,N,1,0,N° de ocupaciones,
+,,,,,,,,,No tuvo,0
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,27,6.C,1.código,Código otra ocupación en los últimos 7 días,C16REC,N,2,0,(igual a A13REC),
+,27,6.C,2.código,Código otra rama de actividad ocupación,C17REC,N,2,0,(igual a A14REC),
+,27,6.C,18,Horas que trabajó efectivamente en estas otras ocupaciones ,C18,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,Blanco
+,27,6.C,18 A,¿La cantidad de horas que trabajó es habitual?,C18A,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,27,6.C,18 B,¿Cuántas horas trabaja habitualmente en una semana en esta ocupación?,C18B,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,Blanco
+,27,6.C,19,En este trabajo es…,C19,N,1,0,(igual a A15),
+,28,6.D,1,En los últimos 7 días ¿estuvo disponible para trabajar más horas?,D01,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,28,6.D,2,¿Cuántas horas más tuvo disponible para trabajar?,D02,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,Blanco
+,28,6.D,3,¿Desea mejorar su/sus ocupación/nes o cambiar o adicionar otra ocupación?,D03,N,1,0,"Si, mejorar su/s ocupación/es",1
+,,,,,,,,,"Si, cambiar la o las ocupaciones",2
+,,,,,,,,,"Si, adicionar otra ocupación",3
+,,,,,,,,,No desea cambiar,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,28,6.D,4,¿Buscó algún otro trabajo para cambiar o adicionar al que ya tiene?,D04,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,28,6.D,5,¿Cuál es la razón principal por al que desea mejorar o cambiar o adicionar su empleo actual?,D05,N,2,0,Gana poco,1
+,,,,,,,,,El trabajo es pesado,2
+,,,,,,,,,Desea trabajar menos horas sin ganar menos,3
+,,,,,,,,,Desea trabajar menos horas aunque gane menos,4
+,,,,,,,,,Desea trabajar igual cantidad de horas y ganar igual,5
+,,,,,,,,,Desea trabajar más horas y ganar más,6
+,,,,,,,,,No aprovecha sus estudios y experiencias,7
+,,,,,,,,,Ambiente de trabajo inadecuado,8
+,,,,,,,,,Conflictos laborales,9
+,,,,,,,,,Poco estable,10
+,,,,,,,,,"Motivo familiar, personal",11
+,,,,,,,,,Otra razón (especificar),12
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,29,6.E,1.A,Ingreso mensual Ocupación Principal declarado,E01A,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.B,Ingreso mensual Ocupación Secundaria declarado,E01B,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.C,Ingreso mensual Otras Ocupaciones declarado,E01C,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.D,Ingreso mensual Alquileres o Rentas neto declarado,E01D,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.E,"Ingreso mensual Intereses, Dividendos o Utilidades declarado",E01E,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.F,Ingreso mensual Ayuda Familiar del país declarado,E01F,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.G,Ingreso mensual Prestaciones por divorcios o cuidado de hijos declarado,E01G,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,29A,6.E,1.H,Ingreso mensual por jubilacion declarado,E01H,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.I,Ingresos mensual del Estado (Monetario: Tekopora) declarado,E01I,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.J,"Ingreso mensual Pension(ex combatiente,viudas,etc)",E01J,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.K,Ingresos del Estado (Monetario: Adulto Mayor) declarado,E01K,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.L,Ingresos del Estado (Víveres de alguna Institución pública),E01L,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.M,Otros ingresos mensuales declarado,E01M,N,11,0,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,,Categoría ocupacional en la ocupación principal (ocupados) / Categoría en la última ocupación (desocupados) recodificada,CATE_PEA,N,1,0,Empleado / obrero público,1
+,,,,,,,,,Empleado / obrero privado,2
+,,,,,,,,,Empleador o patrón,3
+,,,,,,,,,Trabajador por cuenta propia,4
+,,,,,,,,,Trabajador familiar no remunerado,5
+,,,,,,,,,Empleado doméstico,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,,N° de personas que trabajan en el establecimiento de la ocupación principal (ocupados) / N° de personas que trabajaban en el establecimiento de la última ocupación (desocupados),TAMA_PEA,N,2,0,(igual a A16),
+,,,,Recodificación de OCUP,OCUP_PEA,N,2,0,"Miembros del Poder Ejecutivo, Legislativo y Judicial, personal directivo de la Administración pública y de empresa",1
+,,,,Ocupación principal en los últimos 7 días (ocupados) / Última ocupación (desocupados),,,,,Profesionales científicos e intelectuales,2
+,,,,,,,,,Técnicos y profesionales de nivel medio,3
+,,,,,,,,,Empleados de oficina,4
+,,,,,,,,,Trabajadores de los servicios y vendedores de comercios y mercados,5
+,,,,,,,,,Agricultores y trabajadores Agropecuarios y Pesqueros,6
+,,,,,,,,,"Oficiales, operarios y artesanos de artes mecánicas y de otros oficios",7
+,,,,,,,,,Operadores de instalaciones y máquinas y montadores,8
+,,,,,,,,,Trabajadores no calificados,9
+,,,,,,,,,Fuerzas armadas,10
+,,,,,,,,,NR,99
+,,,,,,,,,NA,0
+,,,,Recodificación de RAMA,RAMA_PEA,N,2,0,"Agricultura, ganadería, caza, silvicultura y pesca",1
+,,,,Rama de actividad en la ocupación principal (ocupados) / Rama de actividad de la última ocupación (desocupados),,,,,Industrias manufactureras,2
+,,,,,,,,,"Electricidad, gas y agua",3
+,,,,,,,,,Construcciones,4
+,,,,,,,,,"Comercio al por mayor y menor, restaurantes y hoteles",5
+,,,,,,,,,"Transporte, almacenamiento y comunicaciones",6
+,,,,,,,,,"Establecimientos financieros, seguros, bienes inmuebles y servicios prestados a las empresas",7
+,,,,,,,,,"Servicios comunales, sociales y personales",8
+,,,,,,,,,NR,99
+,,,,,,,,,NA,0
+,,,,Horas trabajadas en la actividad principal ,HORAB,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,Blanco
+,,,,Horas trabajadas en la actividad principal y secundaria,HORABC,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,Blanco
+,,,,Horas trabajadas en todas las actividades,HORABCO,N,3,0,Horas,
+,,,,,,,,,NR,999
+,,,,,,,,,NA,Blanco
+,,,,Actividad económica (desagregada),PEAD,N,1,0,Otros ocupados,1
+,,,,,,,,,Desocupados de 2ª ó más veces,2
+,,,,,,,,,Inactivos,3
+,,,,,,,,,Subocup. Visible,4
+,,,,,,,,,Desocupados de 1ª vez,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,0
+,,,,Actividad económica (agrupada),PEAA,N,1,0,Ocupados,1
+,,,,,,,,,Desocupados,2
+,,,,,,,,,Inactivos,3
+,,,,,,,,,NR,9
+,,,,,,,,,NA,0
+,,,,Tipo de hogar,TIPOHOGA,N,1,0,Unipersonal,1
+,,,,,,,,,Nuclear completo,2
+,,,,,,,,,Nuclear incompleto,3
+,,,,,,,,,Extendido,4
+,,,,,,,,,Compuesto,5
+,,,,Nivel y grado de instrucción del jefe de hogar,NJEF,N,4,0,(igual a ED54),
+,,,,Nivel y grado de instrucción del cónyuge ,NCON,N,4,0,(igual a ED54),
+,,,,Nivel y grado de instrucción del padre ,NPAD,N,4,0,(igual a ED54),
+,,,,Nivel y grado de instrucción de la madre,NMAD,N,4,0,(igual a ED54),
+,,,,Años de estudio,AÑOEST,N,8,0,Años,0:18
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,,,,Razón de inactividad,RA06YA09,N,8,0,Estudiante,1
+,,,,,,,,,Labores del Hogar,2
+,,,,,,,,,No consigue trabajo,3
+,,,,,,,,,Enfermo,4
+,,,,,,,,,Anciano,5
+,,,,,,,,,Discapacitado,6
+,,,,,,,,,Jubilado o Pensionado,7
+,,,,,,,,,Motivos familiares,8
+,,,,,,,,,Otra situación,9
+,,,,,,,,,NA,Blanco
+,,,1.A,Ingreso mensual que habitualmente recibe de la actividad principal,e01aimde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.B,Ingreso mensual que habitualmente recibe de la actividad secundaria,e01bimde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.C,Ingreso mensual que habitualmente recibe de todas las otras actividades,e01cimde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.D,Ingreso mensual que habitualmente recibe por alquileres o rentas neto,e01dde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.E,"Ingreso mensual que habitualmente recibe por intereses, dividendos o utilidades",e01ede,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.F,Ingreso mensual que habitualmente recibe como ayuda familiar del país,e01fde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.G,Ingreso mensual prestaciones por divorcios o cuidado de hijos,e01gde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.H,Ingreso mensual por jubilacion,e01hde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.I,Ingreso mensual del Estado (Monetario: Tekoporã) ,e01ide,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.J,"Ingreso mensual Pensión (ex combatiente,viudas,etc)",e01jde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.K,Ingreso mensual del Estado (Monetario: Adulto Mayor) ,e01kde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.L,Ingreso por víveres de alguna Institución pública,e01lde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.M,Ingreso mensual que habitualmente recibe por otros ingresos,e01mde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,1.KJ,Ingreso mensual que habitualmente recibe por otros ingresos agro asignados al jefe,e01kjde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,2.B,Ingreso mensual que habitualmente recibe de ayuda familiar del exterior,e02bde,N,19,3,Gs.,
+,,,,,,,,,NR,99999999999
+,,,,,,,,,NA,Blanco
+,,,,Valor imputado por vaso de leche deflactado,ingrevasode,N,19,3,Gs.,
+,,,,,,,,,NA,Blanco
+,,,,Ingreso per cápita mensual,ipcm,N,8,2,Gs.,
+,,,,,,,,,NA,Blanco
+,,,,Estatus de pobreza,pobrezai,N,8,0,Pobre extremo,1
+,,,,,,,,,Pobre no extremo,2
+,,,,,,,,,No pobre,3
+,,,,,,,,,NA,Blanco
+,,,,Condición de pobreza,pobnopoi,N,8,0,No pobre,0
+,,,,,,,,,Pobre,1
+,,,,,,,,,NA,Blanco
+,,,,Quintiles de ingreso per cápita mensual para el total país,quintili,N,3,0,20%más pobre,1
+,,,,,,,,,20% siguiente,2
+,,,,,,,,,20% siguiente,3
+,,,,,,,,,20% siguiente,4
+,,,,,,,,,20% más rico,5
+,,,,Deciles de ingreso per cápita mensual para el total país,decili,N,3,0,10% más pobre,1
+,,,,,,,,,10% siguiente,2
+,,,,,,,,,10% siguiente,3
+,,,,,,,,,10% siguiente,4
+,,,,,,,,,10% siguiente,5
+,,,,,,,,,10% siguiente,6
+,,,,,,,,,10% siguiente,7
+,,,,,,,,,10% siguiente,8
+,,,,,,,,,10% siguiente,9
+,,,,,,,,,10% más rico,10
+,,,,Quintiles de ingreso per cápita mensual para cada área,quintiai,N,3,0,igual a (QUINTILI),
+,,,,Deciles de ingreso per cápita mensual para cada área,decilai,N,3,0,igual a (DECILI),
+,,,,Ocupados no agropecuarios,Informalidad,N,1,0,Ocupados Informales no agropecuarios ,1
+,,,,,,,,,Ocupados formales no agropecuarios ,2
+,,,,,,,,,No disponible,9
+,,,,Factor de diseño muestral,FEX.2022,N,5,0,,
+,,,,,,,,,,
+,REG02_EPHC_ANUAL_2023,,EDUCACIÓN,,,,,,,
+,Página,Sección,Pregunta,,Variable,Tipo,Longitud,Decimales,Categoría,Rango
+,,,N° de línea de la persona,,L02,N,2,0,Nº de persona,
+,8,4,1,Idioma que habla en la casa la mayor parte del tiempo,ED01,N,1,0,Guaraní,1
+,,,,,,,,,Guaraní y castellano,2
+,,,,,,,,,Castellano,3
+,,,,,,,,,Otro idioma (especificar),4
+,,,,,,,,,No habla,5
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,8,4,2,¿Sabe leer y escribir?,ED02,N,1,0,Si,1
+,,,,,,,,,"No, porque no aprendió a leer y escribir",2
+,,,,,,,,,"No, por la edad avanzada",3
+,,,,,,,,,"No, por problema de visión",4
+,,,,,,,,,"No, por enfermedad o accidente",5
+,,,,,,,,,"No, por otra razón",6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,8,4,3,¿Asiste o asistió alguna vez a una institución de enseñanza formal?,ED03,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,4,5 y 4,Nivel y grado más alto que aprobó ,ED0504,N,4,0,Sin instrucción,0
+,,,,,,,,,Educación especial,101:112
+,,,,,,,,,Educación Inicial,210:212
+,,,,,,,,,EEB 1ª al 6ª (Primaria),301:306
+,,,,,,,,,EEB 7º al 9º,407:409
+,,,,,,,,,Secundario Básico,501:503
+,,,,,,,,,Bachiller Humanístico/Científico,604:607
+,,,,,,,,,Bachiller Técnico/Comercial,704:706
+,,,,,,,,,Bachillerato a distancia,803
+,,,,,,,,,Educación Media Científica,901:903
+,,,,,,,,,Educación Media Técnica,1001:1003
+,,,,,,,,,Educación Media Abierta,1101:1103
+,,,,,,,,,Educ. Básica Bilingüe para personas Jóvenes y Adultas,1201:1204
+,,,,,,,,,Educ. Media a Distancia para Jóvenes y Adultos,1301:1304
+,,,,,,,,,Educ. Básica Alternativa de Jóvenes y Adultos,1401:1403
+,,,,,,,,,Educ. Media Alternativa de Jóvenes y Adultos,1501:1504
+,,,,,,,,,Educ. Media para Jóvenes y Adultos,1601:1604
+,,,,,,,,,Formación profesional no Bachillerato de la Media,1701:1703
+,,,,,,,,,Programa de Alfabetización,1801
+,,,,,,,,,Grado especial/Programas especiales,1900
+,,,,,,,,,Técnica Superior,2001:2004
+,,,,,,,,,Formación Docente,2101:2104
+,,,,,,,,,Profesionalización Docente,2201:2206
+,,,,,,,,,Formación Militar/Policial,2301:2304
+,,,,,,,,,Universitario,2401:2406
+,,,,,,,,,NR,9999
+,,,,,,,,,NA,8888
+,9,4,6,¿Qué titulo o diploma obtuvo por el nivel formal más alto que curso?,ED06C,N,2,0,Superior Universitario,1
+,,,,,,,,,Educación Inicial,2
+,,,,,,,,,EEB (1º y 2º ciclo),3
+,,,,,,,,,EEB (3er ciclo),4
+,,,,,,,,,Educación Media,5
+,,,,,,,,,Militar/Policial,6
+,,,,,,,,,Técnica Superior,7
+,,,,,,,,,Doctorado (Post universitario),8
+,,,,,,,,,Maestría (Post universitario),9
+,,,,,,,,,Especialización (Post universitario),10
+,,,,,,,,,Formación Docente (Post no universitario),11
+,,,,,,,,,Militar/Policial (Post no universitario),12
+,,,,,,,,,Técnico Superior (Post no universitario),13
+,,,,,,,,,No obtuvo,14
+,,,,,,,,,Otro (especificar),15
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,9,4,8,¿Asiste actualmente a una institución de enseñanza formal?,ED08,N,2,0,"Sí, Educ. Inicial",1
+,,,,,,,,,"Sí, Educ. Escolar BáSíca",2
+,,,,,,,,,"Sí, Educación Media Científica",3
+,,,,,,,,,"Sí, Educación Media Técnica",4
+,,,,,,,,,"Sí, Educación Media Abierta",5
+,,,,,,,,,"Sí, Educ. Básíca Bilingüe para personas Jóvenes y Adultas",6
+,,,,,,,,,"Sí, Educación Media para Jóvenes y Adultas",7
+,,,,,,,,,"Sí, Formación Profesíonal no Bachillerato de la Media",8
+,,,,,,,,,"Sí, Programas de Alfabetización",9
+,,,,,,,,,"Sí, Educ. Especial",10
+,,,,,,,,,"Sí, Grado Especial / Programas Especiales",11
+,,,,,,,,,"Sí, Técnica Superior",12
+,,,,,,,,,"Sí, Formación Docente",13
+,,,,,,,,,"Sí, Profesionalización Docente",14
+,,,,,,,,,"Sí, Formación Militar / Policial",15
+,,,,,,,,,"Sí, Superior Universítario",16
+,,,,,,,,,"Sí, Post Superior no Universítario",17
+,,,,,,,,,"Sí, Post Superior Universítario",18
+,,,,,,,,,No asiste ,19
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,9,4,9,La institución o el programa donde asiste es del sector ,ED09,N,1,0,Público,1
+,,,,,,,,,Privado,2
+,,,,,,,,,Privado Subvencionado ,3
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,10,4,10,¿Por qué no asiste o dejó de asistir?,ED10,N,2,0,Sin recursos en el hogar,1
+,,,,,,,,,Necesidad de trabajar,2
+,,,,,,,,,Muy costosos los materiales y matriculas,3
+,,,,,,,,,No tiene edad adecuada ,4
+,,,,,,,,,Considera que terminó los estudios,5
+,,,,,,,,,No existe institución cercana,6
+,,,,,,,,,Institución cercana muy mala,7
+,,,,,,,,,El centro educativo cerró,8
+,,,,,,,,,El docente no asiste con regularidad ,9
+,,,,,,,,,Institución no ofrece escolaridad completa,10
+,,,,,,,,,Requiere educación especial,11
+,,,,,,,,,Por enfermedad,12
+,,,,,,,,,Debe hacer labores en el hogar,13
+,,,,,,,,,Motivos familiares,14
+,,,,,,,,,No quiere estudiar,15
+,,,,,,,,,Asiste a enseñanza vocacional o formación profesional,16
+,,,,,,,,,Servicio militar,17
+,,,,,,,,,Otra razón,18
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,10,4,11F1,Durante el presente año escolar ¿recibió gratuitamente desayuno o merienda? (kit de merienda escolar),ED11F1,N,1,0,Sí,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,10,4,11F1A,¿Recibió el mes pasado desayuno o merienda?,ED11F1A,N,1,0,Sí,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,10,4,11GH1,Durante el presente año escolar ¿recibió gratuitamente almuerzo o cena?             (Kit de almuerzo o cena escolar),ED11GH1,N,1,0,Sí,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,10,4,11GH1A,¿Recibió el mes pasado almuerzo o cena?,ED11GH1A,N,1,0,Sí,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,,Factor de diseño muestral,FEX.2022,N,5,0,,
+,,,,,,,,,,
+,,,,,,,,,,
+,REG02_EPHC_ANUAL_2023,,SALUD,,,,,,,
+,Página,Sección,Pregunta,,Variable,Tipo,Longitud,Decimales,Categoría,Rango
+,,,N° de línea de la persona,,L02,N,2,0,Nº de persona,
+,11,5,1.a,¿Actualmente tiene algún seguro médico vigente en el país ?,S01A,N,1,0,"Sí, IPS",1
+,,,,,,,,,"Sí, Seguro privado individual",2
+,,,,,,,,,"Sí, Seguro privado laboral",3
+,,,,,,,,,"Sí, Seguro privado familiar",4
+,,,,,,,,,"Sí, Sanidad militar",5
+,,,,,,,,,"Sí, Sanidad policial",6
+,,,,,,,,,No tiene en ningún lugar,7
+,,,,,,,,,Otro (especificar),8
+,,,,,,,,,NR,9
+,,,1.b,,S01B,N,1,0,"Sí, IPS",1
+,,,,,,,,,"Sí, Seguro privado individual",2
+,,,,,,,,,"Sí, Seguro privado laboral",3
+,,,,,,,,,"Sí, Seguro privado familiar",4
+,,,,,,,,,"Sí, Sanidad militar",5
+,,,,,,,,,"Sí, Sanidad policial",6
+,,,,,,,,,No tiene en ningún lugar,7
+,,,,,,,,,Otro (especificar),8
+,,,,,,,,,NR,9
+,11,5,2,Está asegurado en IPS como ...,S02,N,1,0,Asegurado directo/titular (activo o pagante),1
+,,,,,,,,,Jubilado y/o familiar,2
+,,,,,,,,,Pensionados,3
+,,,,,,,,,Excombatientes y/o familiar,4
+,,,,,,,,,"Familiares (padres,cónyuge e hijos)",5
+,,,,,,,,,Otro,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,11,5,3,"Durante los últimos 90 días, ¿estuvo enfermo o accidentado?",S03,N,1,0,"Si, estuvo enfermo/a",1
+,,,,,,,,,"Si, estuvo accidentado/a",2
+,,,,,,,,,"No, ha estado sano/a",3
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,11,5,3A,Enfermedad que tuvo en los últimos 90 días_A,S03A,N,1,0,"Resfrío, gripe, influenza",1
+,,,,,,,,,Bronquitis,2
+,,,,,,,,,Neumonía o pulmonía,3
+,,,,,,,,,Coronavirus (COVID 19),4
+,,,,,,,,,Dengue / Zika / Chikungunya,5
+,,,,,,,,,Otro (especificar),6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,3B,Enfermedad que tuvo en los últimos 90 días_B,S03B,N,1,0,"Resfrío, gripe, influenza",1
+,,,,,,,,,Bronquitis,2
+,,,,,,,,,Neumonía o pulmonía,3
+,,,,,,,,,Coronavirus (COVID 19),4
+,,,,,,,,,Dengue / Zika / Chikungunya,5
+,,,,,,,,,Otro (especificar),6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,3C,Enfermedad que tuvo en los últimos 90 días_C,S03C,N,1,0,"Resfrío, gripe, influenza",1
+,,,,,,,,,Bronquitis,2
+,,,,,,,,,Neumonía o pulmonía,3
+,,,,,,,,,Coronavirus (COVID 19),4
+,,,,,,,,,Dengue / Zika / Chikungunya,5
+,,,,,,,,,Otro (especificar),6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,11,5,4,"¿Consultó a algún médico, curandero, etc. y/o algún establecimiento de salud por esa enfermedad o accidente más reciente que tuvo?",S04,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,11,5,5,¿Por qué no consultó a alguien para tratar su enfermedad o accidente?,S05,N,1,0,La dolencia no era grave,1
+,,,,,,,,,No hay atención cercana,2
+,,,,,,,,,La atención es mala,3
+,,,,,,,,,Las consultas son caras,4
+,,,,,,,,,Se automedicó,5
+,,,,,,,,,No tuvo tiempo,6
+,,,,,,,,,Otra razón (especificar),7
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,12,5,6,¿A quién consultó la última vez por la enfermedad o accidente más reciente que tuvo en los últimos 90 días?,S06,N,2,0,Doctor/a,1
+,,,,,,,,,Partera profesional,2
+,,,,,,,,,Partera empírica (chaé),3
+,,,,,,,,,Enfermero/a,4
+,,,,,,,,,Dentista,5
+,,,,,,,,,Farmacéutico/a,6
+,,,,,,,,,Curandero/a,7
+,,,,,,,,,Familiar o Vecino,8
+,,,,,,,,,Otro (especificar),9
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,12,5,7,¿A qué establecimiento de salud acudió la última vez por la enfermedad o accidente más reciente?,S07,N,2,0,IPS,1
+,,,,,,,,,Hospital de Clínicas/Materno Infantil,2
+,,,,,,,,,Hospital del Ministerio,3
+,,,,,,,,,Centro de Salud del Ministerio,4
+,,,,,,,,,Puesto de Salud del Ministerio,5
+,,,,,,,,,Unidad de Salud Familiar (APS/USF),6
+,,,,,,,,,Sanidad Militar,7
+,,,,,,,,,Sanidad Policial,8
+,,,,,,,,,"Sanatorio, Clínica o Consultorio privado",9
+,,,,,,,,,Farmacia,10
+,,,,,,,,,Casa de curandero,11
+,,,,,,,,,Su casa,12
+,,,,,,,,,Otra casa particular,13
+,,,,,,,,,Otro (especificar),14
+,,,,,,,,,NR,99
+,,,,,,,,,NA,Blanco
+,12,5,8,¿Recibió gratuitamente medicamentos o remedios los últimos 90 días?,S08,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,12,5,9,¿Se internó por la enfermedad o accidente mas reciente?,S09,N,1,0,Si,1
+,,,,,,,,,No,6
+,,,,,,,,,NR,9
+,,,,,,,,,NA,Blanco
+,,,,Factor de diseño muestral,FEX.2022,N,5,0,,
